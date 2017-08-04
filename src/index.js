@@ -1,3 +1,5 @@
-class Graph {
+import Graph from './Graph';
 
-}
+export {
+  Graph
+};
