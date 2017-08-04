@@ -8,12 +8,17 @@
     "build:umd": "cross-env BABEL_ENV=es NODE_ENV=development rollup -c -i src/index.js -o dist/anygraph.js",
     "build:umd:min": "cross-env BABEL_ENV=es NODE_ENV=production rollup -c -i src/index.js -o dist/anygraph.min.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "lodash-es": "^4.17.4",
+    "loose-envify": "^1.3.1"
+  },
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
     "babel-eslint": "^7.2.3",
     "babel-plugin-check-es2015-constants": "^6.22.0",
+    "babel-plugin-transform-class-properties": "^6.22.0",
     "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
     "babel-plugin-transform-es2015-block-scoped-functions": "^6.22.0",
     "babel-plugin-transform-es2015-block-scoping": "^6.24.1",

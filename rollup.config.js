@@ -9,7 +9,7 @@ var config = {
   moduleName: 'anygraph',
   plugins: [
     nodeResolve({
-      jsnext: true
+      jsnext: true,
     }),
     babel({
       exclude: 'node_modules/**'
